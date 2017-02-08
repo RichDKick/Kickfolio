@@ -2,3 +2,4 @@
 /node_modules/*
 /coverage
 /public/css/main.css
+.DS_Store
