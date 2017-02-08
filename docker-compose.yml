@@ -8,7 +8,7 @@ services:
       - "8080:80"
     volumes:
       - ./app:/var/app/project/app
-      - ./assets:/var/app/project/assets
+      - ./public:/var/app/project/public
       - ./scss:/var/app/project/scss
       - ./test:/var/app/project/test
     depends_on:

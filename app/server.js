@@ -4,19 +4,19 @@
 var express = require('express')
 var app = express()
 
-<<<<<<< HEAD
 app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
-app.get('/poo', function (req, res) {
-  res.send('Poo is funny')
+app.get('/about', function (req, res) {
+  res.send('About Kick')
 })
 
+app.use(express.static('public'))
+
 app.listen(80)
-=======
+
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
   res.send('hello world')
 })
->>>>>>> origin/Kickfolio
