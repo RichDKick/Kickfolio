@@ -1,22 +1,36 @@
 'use strict'
 
-// start coding here
-var express = require('express')
-var app = express()
+// Dependencies
+const express = require('express')
+const exphbs = require('express-handlebars')
+const path = require('path')
 
+// Create an express app
+const app = express()
+
+// Set the view engine to be handlebars
+const hbs = exphbs.create({
+  defaultLayout: 'main',
+  partialsDir: 'app/views/partials/',
+  layoutsDir: 'app/views/layouts/'
+})
+app.engine('handlebars', hbs.engine)
+app.set('view engine', 'handlebars')
+app.set('views', path.join(__dirname, '/views'))
+
+// Routes
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  res.render('home', {
+    test: 'Hi'
+  })
 })
 
 app.get('/about', function (req, res) {
   res.send('About Kick')
 })
 
+// Expose public folder
 app.use(express.static('public'))
 
+// Start listening on port
 app.listen(80)
-
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/', function (req, res) {
-  res.send('hello world')
-})
