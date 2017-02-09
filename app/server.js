@@ -31,6 +31,7 @@ app.get('/about', function (req, res) {
 
 // Expose public folder
 app.use(express.static('public'))
+app.use(express.static('materialize'))
 
 // Start listening on port
 app.listen(80)
