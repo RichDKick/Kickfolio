@@ -1,1 +1,16 @@
-@import "_colors"
+@import "_colors";
+@import "_nav";
+
+.button-collapse {
+  color: $primary;
+};
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}

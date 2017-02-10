@@ -6,10 +6,42 @@ $red: #B72705;
 $green: #759C00;
 $blue: #006EB5;
 $black: #000;
+$grey: #333;
+$white: #fff;
 
 //** Map to defaults
 $primary: $red;
 
-.app {
-  color: $red;
+// Backgorund colours
+.bg-red {
+  background-color:$primary !important;
+}
+.bg-green {
+  background-color:$green !important;
+}
+.bg-blue {
+  background-color:$blue !important;
+}
+.bg-black {
+  background-color:$black !important;
+}
+.bg-grey {
+  background-color:$grey !important;
+}
+
+// Text Colours
+.red-text {
+  color:$red !important;
+}
+.green-text {
+  color:$green !important;
+}
+.blue-text {
+  color:$blue !important;
+}
+.black-text {
+  color:$black !important;
+}
+.grey-text {
+  color:$grey !important;
 }

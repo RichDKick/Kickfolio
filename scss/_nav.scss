@@ -1,0 +1,29 @@
+nav ul a,
+nav .brand-logo {
+  color: $grey;
+}
+nav ul a {
+  color:$grey;
+  &:hover {
+    background-color:$primary;
+    color:$white;
+  }
+}
+nav .brand-logo {
+  height:56px;
+}
+nav .brand-logo svg {
+    width: 100%;
+    max-width: 70px;
+    fill: $primary;
+    margin: 5px 0px;
+}
+
+@media only screen and (min-width: 601px) {
+  nav .brand-logo {
+    height:64px;
+  }
+  nav .brand-logo svg {
+    margin:10px 0;
+  }
+}

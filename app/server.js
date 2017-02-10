@@ -26,7 +26,9 @@ app.get('/', function (req, res) {
 })
 
 app.get('/about', function (req, res) {
-  res.send('About Kick')
+  res.render('about', {
+    andyisthebest: 'Hi Andy AKA Ken'
+  })
 })
 
 // Expose public folder
