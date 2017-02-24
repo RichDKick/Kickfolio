@@ -22,12 +22,12 @@ app.set('views', path.join(__dirname, '/views'))
 app.get('/', function (req, res) {
   res.render('home', {
     test: 'Hi'
-  })
-})
+  });
+});
 
 // Expose public folder
-app.use(express.static('public'))
-app.use(express.static('materialize'))
+app.use(express.static('public'));
+app.use(express.static('materialize'));
 
 // Start listening on port
-app.listen(80)
+app.listen(80);
