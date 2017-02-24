@@ -25,12 +25,6 @@ app.get('/', function (req, res) {
   })
 })
 
-app.get('/about', function (req, res) {
-  res.render('about', {
-    andyisthebest: 'Hi Andy AKA Ken'
-  })
-})
-
 // Expose public folder
 app.use(express.static('public'))
 app.use(express.static('materialize'))
