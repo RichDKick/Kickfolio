@@ -18,14 +18,22 @@ nav .brand-logo svg {
     fill: $primary;
     margin: 5px 0px;
 }
+.side-nav {
+  background:$grey;
+}
+.side-nav a {
+  color:$white;
+  font-weight: 400;
+}
 .side-nav a:hover {
   background-color:$primary;
 }
 .side-nav .logo {
 	background:$primary;
-	border-bottom:1px solid #ffffff;
+	border-bottom:1px solid $white;
 	padding: 5px 20px;
 	text-align: center;
+  overflow: hidden;
 }
 .side-nav .logo:hover {
 	background:$primary;

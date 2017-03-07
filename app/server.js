@@ -18,12 +18,16 @@ app.engine('handlebars', hbs.engine)
 app.set('view engine', 'handlebars')
 app.set('views', path.join(__dirname, '/views'))
 
+
+// Send app to router
+require('./router')(app);
+
 // Routes
-app.get('/', function (req, res) {
-  res.render('home', {
-    test: 'Hi'
-  });
-});
+// app.get('/', function (req, res) {
+//   res.render('home', {
+//     test: 'Hi'
+//   });
+// });
 
 // Expose public folder
 app.use(express.static('public'));
