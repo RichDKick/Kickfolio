@@ -1,6 +1,8 @@
-var HomeController = require('./controllers/HomeController');
-var ProjectsController = require('./controllers/ProjectsController');
-var ProjectController = require('./controllers/ProjectController');
+'use strict'
+
+const HomeController = require('./controllers/HomeController');
+const ProjectsController = require('./controllers/ProjectsController');
+const ProjectController = require('./controllers/ProjectController');
 
 // Routes
 module.exports = function(app){

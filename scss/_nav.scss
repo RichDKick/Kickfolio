@@ -5,7 +5,7 @@ nav .brand-logo {
 nav ul a {
   color:$grey;
   &:hover {
-    background-color:$primary;
+    background-color:$red;
     color:$white;
   }
 }
@@ -15,7 +15,7 @@ nav .brand-logo {
 nav .brand-logo svg {
     width: 100%;
     max-width: 70px;
-    fill: $primary;
+    fill: $red;
     margin: 5px 0px;
 }
 .side-nav {
@@ -24,19 +24,21 @@ nav .brand-logo svg {
 .side-nav a {
   color:$white;
   font-weight: 400;
-}
-.side-nav a:hover {
-  background-color:$primary;
+  border-bottom:1px solid #444;
+  &:hover{
+    background-color:$red;
+    border-bottom:1px solid $red;
+  }
 }
 .side-nav .logo {
-	background:$primary;
+	background:$red;
 	border-bottom:1px solid $white;
 	padding: 5px 20px;
 	text-align: center;
   overflow: hidden;
-}
-.side-nav .logo:hover {
-	background:$primary;
+  &:hover{
+    background:$red;
+  }
 }
 .side-nav .logo svg {
 	fill:#ffffff;
