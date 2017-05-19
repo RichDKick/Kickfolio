@@ -2,4 +2,5 @@
 /node_modules/*
 /coverage
 /public/css/main.css
+/public/images/*
 .DS_Store
